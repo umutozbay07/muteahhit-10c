@@ -1,152 +1,176 @@
-
-  };
-
-  const SettingsTab = () => (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="space-y-8">
-      <div>
-        <h2 className="text-4xl font-black mb-3">Ayarlar & Temalar</h2>
-        <p className={`${t.textMuted} text-lg`}>Rehberin görünümünü tarzınıza göre özelleştirin.</p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 pt-6">
-        <button 
-          onClick={() => handleThemeChange('dark')}
-          className={`p-10 rounded-[2rem] flex flex-col items-center gap-4 transition-transform hover:scale-105 bg-slate-900 text-white border-2 ${theme === 'dark' ? 'border-amber-500 shadow-[0_0_20px_rgba(245,158,11,0.4)]' : 'border-transparent'}`}
-        >
-          <div className="w-16 h-16 rounded-full bg-amber-500/20 flex items-center justify-center"><Crown className="text-amber-500" size={32}/></div>
-          <span className="font-black text-xl text-center">Karanlık (Siyah)</span>
-        </button>
-
-        <button 
-          onClick={() => handleThemeChange('light')}
-          className={`p-10 rounded-[2rem] flex flex-col items-center gap-4 transition-transform hover:scale-105 bg-white text-slate-900 border-2 ${theme === 'light' ? 'border-blue-500 shadow-xl' : 'border-slate-200'}`}
-        >
-          <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center"><Settings className="text-blue-600" size={32}/></div>
-          <span className="font-black text-xl text-center">Beyaz Tema</span>
-        </button>
-
-        <button 
-          onClick={() => handleThemeChange('hello-kitty')}
-          className={`p-10 rounded-[2rem] flex flex-col items-center gap-4 transition-transform hover:scale-105 bg-pink-100 text-pink-700 border-2 ${theme === 'hello-kitty' ? 'border-pink-500 shadow-[0_0_20px_rgba(236,72,153,0.5)]' : 'border-pink-200'}`}
-        >
-          <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center border-2 border-pink-400 bg-pink-50">
-            <SmartImage 
-              src="https://i.hizliresim.com/xo3scbkp.jpg" 
-              fallbackSrc="https://i.hizliresim.com/xo3scbkp.jpg"
-              alt="Hello Kitty Modu" 
-              className="w-full h-full object-cover" 
-            />
-          </div>
-          <span className="font-black text-xl text-center">Hello Kitty</span>
-        </button>
-
-        <button 
-          onClick={() => handleThemeChange('tofas')}
-          className={`p-10 rounded-[2rem] flex flex-col items-center gap-4 transition-transform hover:scale-105 bg-red-950 text-white border-2 ${theme === 'tofas' ? 'border-red-500 shadow-[0_0_30px_rgba(220,38,38,0.5)]' : 'border-red-900'}`}
-        >
-          <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center border-2 border-red-500 bg-red-900">
-             <SmartImage 
-               src="https://i.hizliresim.com/ehyw0vri.jpg" 
-               fallbackSrc="https://i.hizliresim.com/ehyw0vri.jpg"
-               alt="Tofaş Modu" 
-               className="w-full h-full object-cover" 
-             />
-          </div>
-          <span className="font-black text-xl text-center">Tofaş Modu</span>
-        </button>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müteahhit Patronu - 10C Özel</title>
+    <!-- Bu 4 satır, tarayıcının kodları düz yazı sanmasını engeller -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white">
+    <div id="root"></div>
+    <!-- Tarayıcı kodları buranın içinde çalıştığını anlayacak -->
+    <script type="text/babel">
         
-        <button 
-          onClick={() => handleThemeChange('10c')}
-          className={`p-10 rounded-[2rem] flex flex-col items-center gap-4 transition-transform hover:scale-105 bg-indigo-950 text-white border-2 ${theme === '10c' ? 'border-indigo-500 shadow-[0_0_30px_rgba(79,70,229,0.5)]' : 'border-indigo-900'}`}
-        >
-          <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center border-2 border-indigo-500 bg-indigo-900">
-             <SmartImage 
-               src="https://i.hizliresim.com/benoe9vb.jpg" 
-               fallbackSrc="https://i.hizliresim.com/benoe9vb.jpg"
-               alt="10 C Modu" 
-               className="w-full h-full object-cover" 
-             />
-          </div>
-          <span className="font-black text-xl text-center">10 C Modu</span>
-        </button>
-      </div>
-    </motion.div>
-  );
+        // --- SENİN KODLARIN BURAYA GELECEK ---
+        // (Not defterine aldığın o kodların hepsini buraya yapıştır)
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müteahhit Patronu - 10C Özel</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { margin: 0; overflow-x: hidden; }
+        .bg-tofas { background-image: url('https://i.hizliresim.com/ehyw0vri.jpg'); background-size: cover; background-position: center; background-attachment: fixed; }
+        .bg-kitty { background-image: url('https://i.hizliresim.com/xo3scbkp.png'); background-size: cover; background-position: center; background-attachment: fixed; }
+        .bg-10c { background-image: url('https://i.hizliresim.com/benoe9vb.jpg'); background-size: cover; background-position: center; background-attachment: fixed; }
+        .glass { background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body class="bg-gray-950 text-white">
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            const [theme, setTheme] = React.useState('dark');
+            const [money, setMoney] = React.useState(15000000);
+            const [activeTab, setActiveTab] = React.useState('home');
 
-  const navItems = [
-    { id: 'home', label: 'Ana Sayfa', icon: Crown },
-    { id: 'configurator', label: 'Planlama', icon: Construction },
-    { id: 'marketing', label: 'Pazarlama', icon: Activity },
-    { id: 'minigames', label: 'Mini Oyunlar', icon: Gamepad2 },
-    { id: 'settings', label: 'Ayarlar', icon: Settings },
-  ];
+            const getThemeClass = () => {
+                if(theme === 'tofas') return 'bg-tofas';
+                if(theme === 'kitty') return 'bg-kitty text-pink-100';
+                if(theme === '10c') return 'bg-10c';
+                if(theme === 'light') return 'bg-gray-100 text-gray-900';
+                return 'bg-gray-950 text-white';
+            };
 
-  return (
-    <div className={`min-h-screen font-sans overflow-x-hidden flex flex-col md:flex-row transition-colors duration-500 ${t.main} relative`}>
-      
-      {/* Hello Kitty Modu - Uçuşan Resimler */}
-      {theme === 'hello-kitty' && <FloatingBackground imageSrc="https://i.hizliresim.com/xo3scbkp.jpg" fallbackSrc="https://i.hizliresim.com/xo3scbkp.jpg" count={12} />}
+            const playExhaust = () => {
+                if (theme === 'tofas') {
+                    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                    const osc = ctx.createOscillator();
+                    osc.type = 'sawtooth';
+                    osc.frequency.setValueAtTime(80, ctx.currentTime);
+                    osc.frequency.exponentialRampToValueAtTime(30, ctx.currentTime + 0.4);
+                    osc.connect(ctx.destination);
+                    osc.start();
+                    osc.stop(ctx.currentTime + 0.4);
+                }
+            };
 
-      {/* Tofaş Modu - Uçuşan Resimler */}
-      {theme === 'tofas' && <FloatingBackground imageSrc="https://i.hizliresim.com/ehyw0vri.jpg" fallbackSrc="https://i.hizliresim.com/ehyw0vri.jpg" count={12} onImageClick={playExhaustSound} />}
+            return (
+                <div className={`min-h-screen transition-all duration-500 ${getThemeClass()}`} onClick={playExhaust}>
+                    <div className="max-w-5xl mx-auto p-4 md:p-8">
+                        
+                        <div className="glass rounded-3xl p-6 mb-8 flex flex-col md:flex-row justify-between items-center shadow-2xl">
+                            <div>
+                                <h1 className="text-4xl md:text-6xl font-black text-yellow-500 tracking-tight">MÜTEAHHİT PATRONU</h1>
+                                <p className="text-xl mt-2 font-bold text-gray-300">10C İçin Başlangıç Müteahhit</p>
+                            </div>
+                            <div className="mt-6 md:mt-0 glass px-6 py-4 rounded-2xl border-2 border-green-500/50 shadow-[0_0_15px_rgba(34,197,94,0.3)]">
+                                <p className="text-sm text-green-400 font-bold uppercase tracking-wider mb-1">Şirket Kasası</p>
+                                <p className="text-3xl font-mono font-black text-green-500">₺ {money.toLocaleString()}</p>
+                            </div>
+                        </div>
 
-      {/* 10 C Modu - Uçuşan Resimler */}
-      {theme === '10c' && <FloatingBackground imageSrc="https://i.hizliresim.com/benoe9vb.jpg" fallbackSrc="https://i.hizliresim.com/benoe9vb.jpg" count={12} />}
+                        <div className="flex gap-4 mb-8 overflow-x-auto pb-2">
+                            {['home', 'games', 'settings'].map(tab => (
+                                <button 
+                                    key={tab}
+                                    onClick={() => setActiveTab(tab)}
+                                    className={`px-8 py-4 rounded-xl font-bold text-lg transition-all ${activeTab === tab ? 'bg-yellow-600 text-white shadow-lg' : 'glass hover:bg-white/10 text-gray-300'}`}
+                                >
+                                    {tab === 'home' ? '🏢 Projeler' : tab === 'games' ? '🎮 Mini Oyunlar' : '⚙️ Ayarlar (Modlar)'}
+                                </button>
+                            ))}
+                        </div>
 
-      {/* Para Sayacı (Sabit) */}
-      <div className="fixed top-4 right-4 z-[100]">
-        <div className="bg-emerald-600 text-white border-2 border-emerald-400 px-5 py-2.5 rounded-full shadow-[0_0_20px_rgba(16,185,129,0.4)] flex items-center gap-3 transform transition-transform hover:scale-105">
-          <Wallet size={24} className="animate-pulse" />
-          <span className="font-black text-xl md:text-2xl tracking-tight">₺ {money.toLocaleString('tr-TR')}</span>
-        </div>
-      </div>
+                        {activeTab === 'home' && (
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div className="glass p-8 rounded-3xl">
+                                    <h2 className="text-2xl font-bold mb-6 text-yellow-500">Yeni Proje Başlat</h2>
+                                    <div className="space-y-4">
+                                        <button onClick={() => setMoney(m => m - 1000000)} className="w-full p-5 bg-blue-600/80 hover:bg-blue-500 rounded-2xl font-bold transition flex justify-between text-lg">
+                                            <span>Lüks Villa Projesi</span>
+                                            <span>-₺1M</span>
+                                        </button>
+                                        <button onClick={() => setMoney(m => m - 5000000)} className="w-full p-5 bg-purple-600/80 hover:bg-purple-500 rounded-2xl font-bold transition flex justify-between text-lg">
+                                            <span>Rezidans (Max 40 Kat)</span>
+                                            <span>-₺5M</span>
+                                        </button>
+                                        <button onClick={() => setMoney(m => m - 15000000)} className="w-full p-5 bg-indigo-600/80 hover:bg-indigo-500 rounded-2xl font-bold transition flex justify-between text-lg">
+                                            <span>Yalı (Sadece İstanbul)</span>
+                                            <span>-₺15M</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="glass p-8 rounded-3xl flex flex-col justify-center items-center text-center border border-yellow-500/20">
+                                    <h2 className="text-4xl font-black mb-4 text-yellow-500">👑 10C Sınıfı Özel</h2>
+                                    <p className="text-xl text-gray-300">Bu oyun tamamen 10C sınıfının müteahhitlik becerilerini geliştirmesi için tasarlanmıştır.</p>
+                                </div>
+                            </div>
+                        )}
 
-      {/* Navigation */}
-      <nav className={`w-full md:w-72 border-b md:border-b-0 md:border-r flex flex-col shrink-0 md:sticky top-0 h-auto md:h-screen z-50 transition-colors duration-500 relative ${t.nav}`}>
-        <div className="p-6 md:p-8">
-          <div className="flex items-center gap-3">
-            <Crown size={32} className={`text-${t.accentColor === 'amber' ? 'amber' : t.accentColor === 'blue' ? 'blue' : t.accentColor === 'pink' ? 'pink' : 'red'}-500`} />
-            <h1 className="font-black text-2xl tracking-tight leading-none">Müteahhit<br/>Patronu</h1>
-          </div>
-        </div>
+                        {activeTab === 'games' && (
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div className="glass p-8 rounded-3xl text-center border border-blue-500/30">
+                                    <div className="text-5xl mb-4">🧮</div>
+                                    <h3 className="text-2xl font-bold mb-2">Müteahhit Matematiği</h3>
+                                    <p className="mb-6 text-gray-300">İnşaat maliyetini hesapla, parayı kap!</p>
+                                    <button onClick={() => setMoney(m => m + 3000000)} className="w-full p-5 bg-green-600 hover:bg-green-500 rounded-2xl font-bold transition text-xl">
+                                        Soruyu Çöz (+₺3.000.000)
+                                    </button>
+                                </div>
+                                <div className="glass p-8 rounded-3xl text-center border border-orange-500/30">
+                                    <div className="text-5xl mb-4">🏗️</div>
+                                    <h3 className="text-2xl font-bold mb-2">Şantiye Clicker</h3>
+                                    <p className="mb-6 text-gray-300">Hızlıca tuğla ör, reflekslerini konuştur!</p>
+                                    <button onClick={() => setMoney(m => m + 50000)} className="w-full p-5 bg-orange-600 hover:bg-orange-500 rounded-2xl font-bold transition active:scale-95 text-xl">
+                                        Tuğla Koy (+₺50.000)
+                                    </button>
+                                </div>
+                            </div>
+                        )}
+
+                        {activeTab === 'settings' && (
+                            <div className="glass p-8 rounded-3xl">
+                                <h2 className="text-3xl font-bold mb-8 text-center">Tema Modları</h2>
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                    <button onClick={() => setTheme('dark')} className={`p-6 rounded-2xl font-bold transition text-lg ${theme === 'dark' ? 'bg-gray-600 shadow-inner' : 'bg-gray-800 hover:bg-gray-700'}`}>Karanlık</button>
+                                    <button onClick={() => setTheme('light')} className={`p-6 rounded-2xl font-bold transition text-lg text-black ${theme === 'light' ? 'bg-gray-300 shadow-inner' : 'bg-gray-200 hover:bg-white'}`}>Beyaz</button>
+                                    <button onClick={() => setTheme('kitty')} className={`p-6 rounded-2xl font-bold transition text-lg ${theme === 'kitty' ? 'bg-pink-600 shadow-[0_0_15px_rgba(219,39,119,0.5)]' : 'bg-pink-500 hover:bg-pink-400'}`}>Hello Kitty</button>
+                                    <button onClick={() => setTheme('tofas')} className={`p-6 rounded-2xl font-bold transition text-lg ${theme === 'tofas' ? 'bg-red-700 shadow-[0_0_15px_rgba(220,38,38,0.5)]' : 'bg-red-600 hover:bg-red-500'}`}>Tofaş (Sesi Aç)</button>
+                                    <button onClick={() => setTheme('10c')} className={`col-span-2 md:col-span-4 p-6 rounded-2xl font-black text-2xl transition border-2 border-blue-400 shadow-[0_0_20px_rgba(59,130,246,0.5)] ${theme === '10c' ? 'bg-blue-600 text-white' : 'bg-blue-900/50 hover:bg-blue-800 text-blue-200'}`}>👑 10C ÖZEL MOD 👑</button>
+                                </div>
+                            </div>
+                        )}
+
+                        <div className="mt-16 text-center text-red-400 font-bold bg-red-950/80 p-6 rounded-2xl border-2 border-red-500/50 shadow-2xl">
+                            ⚠️ YASAL UYARI: Bu uygulama ticari bir amaç taşımamaktadır. Sadece 10C sınıfı içi eğlence amaçlıdır. Ticari satış veya pazarlama yapılamaz.
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
+
+        // --- KODLARININ BİTTİĞİ YER ---
+
+        // NOT: Eğer senin kodlarının en altında zaten aşağıdaki iki satır varsa, 
+        // buradakileri silebilirsin. Yoksa bunlar kalsın ki oyun ekrana yansısın:
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
         
-        <div className="flex flex-row md:flex-col gap-2 p-4 md:p-6 overflow-x-auto md:overflow-visible flex-1 scrollbar-hide">
-          {navItems.map(item => (
-            <button
-              key={item.id}
-              onClick={() => setActiveTab(item.id)}
-              className={`flex items-center gap-4 px-6 py-4 rounded-2xl font-bold transition-all whitespace-nowrap ${
-                activeTab === item.id 
-                  ? t.navItemActive 
-                  : t.navItemHover
-              }`}
-            >
-              <item.icon size={24} />
-              <span>{item.label}</span>
-            </button>
-          ))}
-        </div>
-      </nav>
-
-      {/* Main Content Area */}
-      <main className="flex-1 p-6 md:p-10 lg:p-14 overflow-y-auto relative z-10 pb-24 md:pb-14">
-        <div className="max-w-7xl mx-auto">
-          <AnimatePresence mode="wait">
-            {activeTab === 'home' && <HomeTab key="home" />}
-            {activeTab === 'configurator' && <ConfiguratorTab key="configurator" />}
-            {activeTab === 'marketing' && <MarketingTab key="marketing" />}
-            {activeTab === 'minigames' && <MiniGamesTab key="minigames" />}
-            {activeTab === 'settings' && <SettingsTab key="settings" />}
-          </AnimatePresence>
-        </div>
-      </main>
-
-      {/* Yasal Uyarı - Footer */}
-      <div className="fixed bottom-2 left-0 right-0 z-[60] pointer-events-none flex justify-center px-4">
-        <div className="bg-red-950 text-red-100 px-4 py-2 rounded-xl text-xs md:text-sm font-bold border-2 border-red-500 shadow-[0_0_20px_rgba(220,38,38,0.3)] backdrop-blur-md text-center max-w-3xl pointer-events-auto">
-          🚨 YASAL UYARI: Bu uygulama ticari amaç gütmez. 10C sınıfı için hazırlanmış gayriresmi bir hayran/rehber projesidir. Ticari amaçla kullanılamaz veya satılamaz.
-        </div>
-      </div>
-    </div>
-  );
-}
+    </script>
+</body>
+</html>
